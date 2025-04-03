@@ -61,7 +61,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'frontend/build')
+            BASE_DIR / 'frontend/build'
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -133,7 +133,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend/build/static')
+    BASE_DIR / 'frontend/build/static'
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'

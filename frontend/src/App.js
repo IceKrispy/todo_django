@@ -11,7 +11,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
-  const API_URL = 'http://localhost:8000/api/todos/';
+  const API_URL = 'http://localhost:8000/api/tasks/';
 
   useEffect(() => {
     const fetchTodos = async () => {

@@ -8,4 +8,4 @@ class TodoItemViewSet(viewsets.ModelViewSet):
     serializer_class = TodoItemSerializer
 
 class HomePageView(TemplateView):
-    template_name = 'app.js'
+    template_name = 'index.html'
